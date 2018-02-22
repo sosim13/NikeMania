@@ -35,8 +35,6 @@
 	<FUNCTIONLIST>
 		<FUNCTION id="coverflowChange(index)">
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
-			<FUNCTIONITEM cmd="pname.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@pname')"/>
-			<FUNCTIONITEM cmd="price.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@price')"/>
 		</FUNCTION>
 		<FUNCTION id="closeClick">
 		    <FUNCTIONCALL cmd="userVariable.galleryVisible='true'" /> 

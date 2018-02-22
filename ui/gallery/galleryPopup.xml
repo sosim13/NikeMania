@@ -24,22 +24,6 @@
 			<STYLEBUTTON themeId="thLabel1" layout="190,320,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
         </UILAYOUT>
     </UI>
-    <FUNCTIONCALL cmd="function.coverflowChange(0)" /> 
-    <FUNCTIONCALL cmd="userVariable.galleryVisible='true'" /> 
     
-	<FUNCTIONLIST>
-		<FUNCTION id="coverflowChange(index)">
-			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
-			<FUNCTIONITEM cmd="pname.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@pname')"/>
-			<FUNCTIONITEM cmd="price.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@price')"/>
-		</FUNCTION>
-		<FUNCTION id="coverflowClick">
-			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(gallery.index,1)" />
-			<FUNCTIONITEM cmd="userVariable.link = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@link')"/>
-			<_FUNCTIONITEM cmd="device.log(userVariable.link)"/>
-			<FUNCTIONITEM cmd="function.root.main.navigation(userVariable.link)"/>
-			<FUNCTIONITEM cmd="container.visible='invisible'" />
-			<_FUNCTIONITEM cmd="container.close" delay="2000"/>
-		</FUNCTION>
-	</FUNCTIONLIST>
+
 </MOML>

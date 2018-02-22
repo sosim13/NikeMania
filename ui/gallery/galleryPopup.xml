@@ -31,12 +31,14 @@
     </UI>
     
     <FUNCTIONCALL cmd="function.coverflowChange(0)" /> 
+	<FUNCTIONCALL cmd="userVariable.galleryVisible='true'" /> 
 
 	<FUNCTIONLIST>
 		<FUNCTION id="coverflowChange(index)">
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
 		</FUNCTION>
 		<FUNCTION id="closeClick">
+		    <FUNCTIONCALL cmd="function.coverflowChange(0)" /> 
 		    <FUNCTIONCALL cmd="userVariable.galleryVisible='false'" /> 
 		</FUNCTION>
 	</FUNCTIONLIST>

@@ -171,7 +171,7 @@
             <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.visible='invisible'" elseCmd="function.galleryOpen" />
         </FUNCTION>
 		<FUNCTION id="galleryOpen">
-            <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/>
+            <FUNCTIONITEM cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/>
         </FUNCTION>
 
         <FUNCTION id="fillOrderInfo">

@@ -1,5 +1,6 @@
+// 2014/01/08 ì— ì„œë²„ í˜ì´ì§€ê°€ ë³€ê²½ë¨
 
-?function hideElement(id)
+ï»¿function hideElement(id)
 {
 	var element = document.getElementById(id);
 
@@ -26,115 +27,13 @@ function css(selector, property, value) {
     }
 }
 
-function cssAddFont(name, url) {
-
-	var rule = "@font-face{font-family: '" + name + "'; src: url('" + url+ "')}";
-    for (var i=0; i < document.styleSheets.length; ++i) {
-	    try { 
-			document.styleSheets[i].insertRule(rule, 0);
-		} catch(err) {
-		}
-	}
-}
-
-function getFileName(path)
-{
-	var i = path.lastIndexOf('/');
-	if (i >= 0)
-		path = path.substring(i + 1);
-	
-	i = path.lastIndexOf('.');
-
-	if (i >= 0)
-		path = path.substring(0, i);
-	
-	return path;
-}
-
-function addMomlFont(url) {
-	var fontUrl = agate.runScript("file.pathToUrl('" + url + "')");
-	var fontName = getFileName(url); // ÀüÃ¼ ÆÄÀÏ path Áß¿¡ ÆÄÀÏ¸í¸¸ ±Û²Ã ÀÌ¸§À¸·Î »ç¿ëÇÏµµ·Ï ÇÑ´Ù.
-	
-	cssAddFont(fontName, fontUrl);
-}
-
-
-// ÇÑ±ÛÀº word-wrap:break-word °¡ µ¿ÀÛÇÏÁö ¾Ê´Â´Ù. °¢ ´Ü¾î¸¦ div ÅÂ±×·Î ¹­¾î¼­ break-word Ã³·³ º¸ÀÌµµ·Ï ÇÑ´Ù.
-function makeKorWordWrapInnerHTML(element)
-{
-	var nonHTMLText = element.innerHTML;
-	if (nonHTMLText.indexOf("<div") < 0) { // <div ¸¦ Æ÷ÇÔÇÏ°í ÀÖÀ¸¸é ÀÌ¹Ì ÀÛ¾÷ÇÑ °ÍÀ¸·Î °£ÁÖÇÑ´Ù.
-		element.setAttribute("orgText", nonHTMLText);
-  		var words = nonHTMLText.split(" ");
-  		var text = "";
-  		for (var i = 0; i < words.length; ++i) {
-  			if (i != 0)
-  				text = text + " ";
-  			text = text + "<div style='display:inline-block'>" + words[i] + "</div>";
-  		}
-  		element.innerHTML = text;
-	}
-}
-
-function adjustTextAlign()
-{
-  	var tags=document.getElementsByClassName("pname");
-  	
-	for (i = 0; i < tags.length; ++i) {
-  		var element = tags[i];
-  		element.style.height="auto";
-  		element.style.whiteSpace="normal";
-  		element.style.paddingTop="0px"
-  		element.style.fontSize="9pt"
-  		makeKorWordWrapInnerHTML(element);
-  		
-  	}		
-}
-
-// enlarge image
-function enlargeImage()
-{
-  	var imgs=document.getElementsByTagName("img");
-  	var totalWidth = document.getElementById("container").offsetWidth;
-  	
-    var width = (totalWidth) / 3 - 10;
-    
-    width = Math.min(width, 115);
-    width = Math.max(width, 90);
-    
-	for (i = 0; i < imgs.length; ++i) {
-  		var img = imgs[i];
-  		var dd = img.parentNode;
-  		
-  		if (dd && dd.nodeName.toLowerCase() == "dd") {
-  			var dl = dd.parentNode;
-  			if (dl && dl.nodeName.toLowerCase() == "dl") {
-  				var li = dl.parentNode;
-	  			if (li && li.nodeName.toLowerCase() == "li") {
-	  				var ul = li.parentNode;			
-			  		li.style.width = (width + 5) + "px";
-			  		//li.style.height="auto";
-			  		li.style.marginBottom="20px"
-  					
-                    //alert(img.style.width);
-  			 		img.style.width = width + "px";
- 		 			img.style.height = width + "px";
-                    //++ 2014-02-19 ¼­¹ö ÆäÀÌÁö º¯°æÀÌÈÄ  Android¿¡¼­´Â µÕ±Ù ¸ğ¼­¸® È¿°ú°¡ µ¿ÀÛÇÏÁö ¾ÊÀ½.
- 		 			img.style["border-radius"] =  (width / 10) + "px";
- 		 			img.style["box-shadow"] = "2px 2px 5px rgba(110,110,135,0.5)";
- 	  			}
-  			}
-  		}
-  	}
-}
-
-hideElement('adunit');
-hideElement('abgc');
+hideElement('intro');
 hideElement('gads');
-hideElement('loginbox');
-hideElement('banner1');
 hideElement('movepage');
-hideElement('ads');
 hideElement('banner1');
 hideElement('footer');
-//css("container", "width", "650px");
+
+
+
+window.setTimeout("agate.runScript('caller.showNow')", 500);
+

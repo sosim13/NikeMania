@@ -38,7 +38,7 @@
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
 		</FUNCTION>
 		<FUNCTION id="closeClick">
-			<FUNCTIONITEM cmd="device.toastPopup(webContainer.webView.runJavaScript('document.title'))"/>
+			<FUNCTIONITEM cmd="device.toastPopup(webContainer.webView.runJavaScript('"1"'))"/>
 		    <FUNCTIONCALL cmd="cmd=userVariable.menuView='0'" /> 
 		    <FUNCTIONCALL cmd="userVariable.galleryVisible='false'" /> 
 		</FUNCTION>

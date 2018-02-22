@@ -92,7 +92,7 @@ function adjustTextAlign()
 }
 
 // enlarge image
-function enlargeImage()
+function 
 {
   	var imgs=document.getElementsByTagName("img");
   	var totalWidth = document.getElementById("container").offsetWidth;
@@ -149,5 +149,5 @@ hideElementByClass('GoogleActiveViewClass');
 hideElementByClass('rh');
 changeEmbed('html-embed-medium');
 
-alert(document.getElementsByTagName("img"));
+enlargeImage();
 

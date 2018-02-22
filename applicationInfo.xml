@@ -9,6 +9,5 @@
 <MOML>
     <APPLICATIONINFO>
         <START url="ui/start.xml" />
-        <DEBUG log="all"/>
     </APPLICATIONINFO>
 </MOML>

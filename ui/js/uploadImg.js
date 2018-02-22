@@ -33,4 +33,5 @@ hideElement('movepage');
 hideElement('banner1');
 hideElement('footer');
 
+css("input[type=file] ", "border", "1px solid red");
 

@@ -146,11 +146,7 @@ adjustTextAlign();
    
   
 alert('123');
-hideElement('intro');
-hideElement('gads');
-hideElement('movepage');
-hideElement('banner1');
-hideElement('footer');
+hideElementByClass('content-width');
+hideElementByClass('abnr');
 
-css("input[type=file] ", "border", "1px solid red");
 

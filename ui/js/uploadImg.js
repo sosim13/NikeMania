@@ -33,8 +33,4 @@ hideElement('movepage');
 hideElement('banner1');
 hideElement('footer');
 
-css("div", "display", "none");
-
-
-window.setTimeout("agate.runScript('caller.showNow')", 500);
 

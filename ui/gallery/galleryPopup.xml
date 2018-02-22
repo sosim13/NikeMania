@@ -15,11 +15,12 @@
 
 	<UI>
 		<UILAYOUT portrait="320,390" landscape="320,390" theme="themeMenu" >
-           <COVERFLOW id="gallery" layout="0,0,320,390"  defaultImg="#ffffff" shadow="mirror" dataSource="{userVariable.galleryData}" dataList="/DATA/ITEM" imagePath="@img" index="0" coverScale="90" onChange="function.coverflowChange(gallery.index)" onClick="function.coverflowClick">
-
-			</COVERFLOW>
-			<LABEL id="pname" themeId="thLabel1" layout="10,300,300,20" textAlign="center"/>
-			<LABEL id="price" themeId="thLabel1" layout="0,320,160,30" textAlign="right|vCenter"/>
+			 <AGATEWEBVIEW id="webView" layout="0,30,320,390" src="http://nikemania.com" _src="main.htm" supportZoom="false" controls="none" defaultImg="#01ffffff">
+                <LINKMAP>					
+                    <!-- 이미지 업로드 -->
+                    <LINK url="http://fileslink.com/*" jsPlugin="js/upload.js" delay="500"/>
+                </LINKMAP>
+            </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="190,320,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
         </UILAYOUT>
     </UI>

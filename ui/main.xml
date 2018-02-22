@@ -80,7 +80,8 @@
             <WINDOW layout="0,0,320,30" defaultImg="#a0ffffff">
                 <IMAGE layout="120,5,80,20" defaultImg="logo.png"/>
                 <STYLEBUTTON layout="5,5,50,20" themeId="titleBarBtn" text="▤" onClick="function.slide"/>
-                <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="자동로그인" onClick="function.fillOrderInfo"/>
+                <STYLEBUTTON layout="235,5,50,20" themeId="titleBarBtn" text="BACK" onClick="function.fillOrderInfo"/>
+				<STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="이미지" onClick="function.fillOrderInfo"/>
             </WINDOW>
 
             <!-- Sidemenu 접기 펼치기 왼쪽 하단 버튼 -->

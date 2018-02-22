@@ -145,7 +145,6 @@ css("dd.price", "font-family", "QumpellkaNo12");
 adjustTextAlign();
    
   
-alert('123');
 hideElementByClass('content-width');
 hideElementByClass('abnr');
 

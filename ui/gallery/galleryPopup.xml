@@ -36,13 +36,7 @@
 	<FUNCTIONLIST>
 		<FUNCTION id="coverflowChange(index)">
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
-		</FUNCTION>
-		<FUNCTION id="closeClick">
-			<FUNCTIONITEM cmd="device.toastPopup(webContainer.webView.runJavaScript('document.title'))"/>
-		    <FUNCTIONCALL cmd="userVariable.menuView='0'" /> 
-		    <FUNCTIONCALL cmd="userVariable.galleryVisible='false'" /> 
-		</FUNCTION>
-		
+		</FUNCTION>		
         <FUNCTION id="back">
             <FUNCTIONITEM condition="userVariable.galleryVisible=='true' and galleryPopup.visible == 'visible'" cmd="galleryPopup.visible='invisible'" elseCmd="webContainer.webView.back"/>
         </FUNCTION>

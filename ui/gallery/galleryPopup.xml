@@ -37,7 +37,7 @@
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
 		</FUNCTION>
 		<FUNCTION id="closeClick">
-		    <FUNCTIONCALL cmd="userVariable.galleryVisible='true'" /> 
+		    <FUNCTIONCALL cmd="userVariable.galleryVisible='false'" /> 
 		</FUNCTION>
 	</FUNCTIONLIST>
 

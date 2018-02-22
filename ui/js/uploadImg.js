@@ -147,5 +147,6 @@ adjustTextAlign();
   
 hideElementByClass('GoogleActiveViewClass');
 hideElementByClass('rh');
+changeEmbed('html-embed-medium');
 
 

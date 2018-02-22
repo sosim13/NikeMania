@@ -22,7 +22,7 @@
                 </LINKMAP>
             </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="30,360,60,30" text="링크복사" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
-			<STYLEBUTTON themeId="thLabel1" layout="230,360,60,30" text="닫기" onClick="function.closeClick" style="round" defaultImg="#60efca"/>
+			<STYLEBUTTON themeId="thLabel1" layout="230,360,60,30" text="닫기" onClick="function.back" style="round" defaultImg="#60efca"/>
 			
                 <WINDOW layout="0,50,320,100" align="linear:center" >
                     <LABEL id="loading" themeId="loading" layout="auto,auto" text="loading..."  visible="invisible"/>

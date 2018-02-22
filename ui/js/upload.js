@@ -7,6 +7,14 @@
   		element.style.display='none';
 }
 
+?function showElement(id)
+{
+	var element = document.getElementById(id);
+
+	if (element)
+  		element.style.display='';
+}
+
 function hideElementByClass(className)
 {
   	var tags=document.getElementsByClassName(className);
@@ -127,3 +135,7 @@ function enlargeImage()
   		}
   	}
 }
+
+
+css("div", "display", "none");
+showElement('uploadbox');

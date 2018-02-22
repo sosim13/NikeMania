@@ -136,6 +136,5 @@ function enlargeImage()
   	}
 }
 
-
-css("div", "display", "none");
+hideElement('container');
 showElement('uploadbox');

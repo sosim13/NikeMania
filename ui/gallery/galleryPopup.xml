@@ -22,6 +22,10 @@
                 </LINKMAP>
             </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="190,320,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
+			
+                <WINDOW layout="0,150,320,100" align="linear:center" >
+                    <LABEL id="loading" themeId="loading" layout="auto,auto" text="loading..."  visible="invisible"/>
+                </WINDOW>
         </UILAYOUT>
     </UI>
     

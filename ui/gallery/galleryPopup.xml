@@ -21,7 +21,7 @@
                     <LINK url="http://fileslink.com/*" jsPlugin="js/upload.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>			
-			<STYLEBUTTON themeId="thLabel1" layout="220,390,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
+			<STYLEBUTTON themeId="thLabel1" layout="230,370,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
 			
                 <WINDOW layout="0,50,320,100" align="linear:center" >
                     <LABEL id="loading" themeId="loading" layout="auto,auto" text="loading..."  visible="invisible"/>

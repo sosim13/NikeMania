@@ -7,9 +7,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="format-detection" content="telephone=no" />
     <script language="javascript">
-function iframeOnLoad()
+function iframeOnLoad2()
 {
-	var doc = document.getElementById('mainIFrame').contentDocument;
+	var doc = document.getElementById('mainIFrame2').contentDocument;
 	alert(doc);
 	var element = doc.getElementById('header');
 	alert(element);
@@ -20,6 +20,6 @@ function iframeOnLoad()
 
 </head>
 <body style="padding:0;margin:0;">
-<iframe id="mainIFrame" src="http://fileslink.com" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" onload="iframeOnLoad()"/>
+<iframe id="mainIFrame2" src="http://fileslink.com" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" onload="iframeOnLoad2()"/>
 </body>
 </html>

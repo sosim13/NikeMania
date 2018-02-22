@@ -168,7 +168,8 @@
         </FUNCTION>
 
         <FUNCTION id="gallery">
-            <FUNCTIONITEM cmd="galleryPopup.visible='visible'"/>
+            <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.visible='invisible'"/>
+            <FUNCTIONITEM condition="userVariable.galleryVisible=='false'" cmd="galleryPopup.visible='visible'"/>
             <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='gallery/galleryPopup.xml'"/>
         </FUNCTION>
 

@@ -81,7 +81,7 @@
             <WINDOW layout="0,0,320,30" defaultImg="#a0ffffff">
                 <IMAGE layout="120,5,80,20" defaultImg="logo.png"/>
                 <STYLEBUTTON layout="5,5,50,20" themeId="titleBarBtn" text="▤" onClick="function.slide"/>
-                <STYLEBUTTON layout="205,5,50,20" themeId="titleBarBtn" text="◁" onClick="function.back"/>
+                <STYLEBUTTON layout="205,5,20,20" themeId="titleBarBtn" text="◁" onClick="function.back"/>
                 <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="자동로그인" onClick="function.fillOrderInfo"/>
 				<!-- <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="자동로그인" onClick="function.fillOrderInfo"/> -->
             </WINDOW>

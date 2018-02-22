@@ -27,6 +27,7 @@ function css(selector, property, value) {
     }
 }
 
+alert('123');
 hideElement('intro');
 hideElement('gads');
 hideElement('movepage');

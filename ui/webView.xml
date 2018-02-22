@@ -25,7 +25,7 @@
 
 					
                     <!-- 이미지 업로드 -->
-                    <LINK url="http://fileslink.com/*" jsPlugin="/ui/gallery/upload.js" delay="500"/>
+                    <LINK url="http://fileslink.com/*" jsPlugin="/ui/gallery/uploadImg.js" delay="500"/>
 
                     <!-- 자동로그인 -->
                     <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/>

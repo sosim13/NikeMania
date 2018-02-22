@@ -7,14 +7,6 @@
   		element.style.display='none';
 }
 
-?function showElement(id)
-{
-	var element = document.getElementById(id);
-
-	if (element)
-  		element.style.display='';
-}
-
 function hideElementByClass(className)
 {
   	var tags=document.getElementsByClassName(className);
@@ -136,13 +128,13 @@ function enlargeImage()
   	}
 }
 
-hideElement('adunit');
-hideElement('abgc');
-hideElement('gads');
-hideElement('loginbox');
-hideElement('banner1');
-hideElement('movepage');
-hideElement('ads');
-hideElement('banner1');
-hideElement('footer');
+hideElement('div#adunit');
+hideElement('div#abgc');
+hideElement('div#gads');
+hideElement('div#loginbox');
+hideElement('div#banner1');
+hideElement('div#movepage');
+hideElement('div#ads');
+hideElement('div#banner1');
+hideElement('div#footer');
 //css("container", "width", "650px");

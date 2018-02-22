@@ -168,9 +168,9 @@
         </FUNCTION>
 
         <FUNCTION id="gallery">
-            <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.visible='visible'"/>
-            <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/>
-        </FUNCTION>
+			<FUNCTIONITEM cmd="galleryPopup.visible='visible'"/>
+			<FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src=/ui/gallery/galleryPopup.xml'"/>
+		</FUNCTION>
 
         <FUNCTION id="fillOrderInfo">
             <FUNCTIONITEM cmd="webContainer.webView.runJavaScript(file.read('js/fillOrderInfo.js'))"/>

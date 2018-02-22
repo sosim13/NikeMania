@@ -14,7 +14,7 @@
    
 
 	<UI>
-		<UILAYOUT portrait="320,390" landscape="320,390" theme="themeMenu" >
+		<UILAYOUT portrait="320,450" landscape="320,450" theme="themeMenu" >
 			 <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://fileslink.com/" _src="image.htm" supportZoom="false" controls="none" defaultImg="#01ffffff">
                 <LINKMAP>					
                     <!-- 이미지 업로드 -->
@@ -23,7 +23,7 @@
             </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="190,320,60,30" text="상세보기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
 			
-                <WINDOW layout="0,150,320,100" align="linear:center" >
+                <WINDOW layout="0,50,320,100" align="linear:center" >
                     <LABEL id="loading" themeId="loading" layout="auto,auto" text="loading..."  visible="invisible"/>
                 </WINDOW>
         </UILAYOUT>

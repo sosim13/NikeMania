@@ -136,5 +136,11 @@ function enlargeImage()
   	}
 }
 
-hideElement('container');
+hideElement('intro');
+hideElement('gads');
+hideElement('loginbox');
+hideElement('movepage');
+hideElement('banner1');
+hideElement('footer');
+//css("container", "width", "650px");
 showElement('uploadbox');

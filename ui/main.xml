@@ -168,8 +168,10 @@
         </FUNCTION>
 
         <FUNCTION id="gallery">
-            <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.visible='visible'" elseCmd="function.galleryClose"/>
-            <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/>
+            <FUNCTIONITEM cmd="galleryPopup.visible='visible'"/>
+            <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'" elseCmd="function.galleryClose"/>
+			
+            <!-- <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.visible='visible'" elseCmd="function.galleryClose"/> -->
         </FUNCTION>
 		<FUNCTION id="galleryClose">
             <FUNCTIONITEM cmd="galleryPopup.visible='invisible'"/>

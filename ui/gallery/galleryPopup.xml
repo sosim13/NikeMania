@@ -38,7 +38,7 @@
 			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
 		</FUNCTION>		
         <FUNCTION id="back">
-            <FUNCTIONITEM condition="userVariable.galleryVisible=='true' and galleryPopup.visible == 'visible'" cmd="galleryPopup.visible='invisible'" elseCmd="webContainer.webView.back"/>
+            <FUNCTIONITEM condition="galleryPopup.visible == 'visible'" cmd="galleryPopup.visible='invisible'" elseCmd="webContainer.webView.back"/>
         </FUNCTION>
 	</FUNCTIONLIST>
 

@@ -30,6 +30,7 @@
         </UILAYOUT>
     </UI>
     
+    <FUNCTIONCALL cmd="function.coverflowChange(0)" /> 
 
 	<FUNCTIONLIST>
 		<FUNCTION id="coverflowChange(index)">
@@ -38,8 +39,7 @@
 			<FUNCTIONITEM cmd="price.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@price')"/>
 		</FUNCTION>
 		<FUNCTION id="closeClick">
-		
-            <FUNCTIONITEM cmd="galleryPopup.visible='invisible'"/>
+		    <FUNCTIONCALL cmd="userVariable.galleryVisible='true'" /> 
 		</FUNCTION>
 	</FUNCTIONLIST>
 

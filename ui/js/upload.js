@@ -136,11 +136,13 @@ function enlargeImage()
   	}
 }
 
-hideElement('intro');
+hideElement('adunit');
+hideElement('abgc');
 hideElement('gads');
 hideElement('loginbox');
+hideElement('banner1');
 hideElement('movepage');
+hideElement('ads');
 hideElement('banner1');
 hideElement('footer');
 //css("container", "width", "650px");
-showElement('uploadbox');

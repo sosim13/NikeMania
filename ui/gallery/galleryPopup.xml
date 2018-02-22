@@ -23,7 +23,7 @@
             </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="100,360,60,30" text="링크복사" onClick="document.back(-1)" style="round" defaultImg="#ff7e3c"/>
 			<STYLEBUTTON themeId="thLabel1" layout="170,360,40,30" text="닫기" onClick="window.close()" defaultImg="#ff7e3c"/>
-			<WINDOW layout="100,320,220,100" align="linear:center" >
+			<WINDOW layout="0,300,120,100" align="linear:center" >
 				<LABEL id="help" themeId="help" layout="auto,auto" text="이미지 팝업 닫기는 상단에 뒤로가기 버튼을 눌러주세요."  visible="invisible"/>
 			</WINDOW>
         </UILAYOUT>

@@ -23,6 +23,10 @@
                     <!-- 공통 -->
                     <LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/>
 
+					
+                    <!-- 이미지 업로드 -->
+                    <LINK url="http://www.fileslink.com/*" jsPlugin="js/upload.js" delay="500"/>
+
                     <!-- 자동로그인 -->
                     <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/>
                     <!-- <LINK url="http://nikemania.com/m/m.php" onFinish="function.fillOrderInfo" delay="1000"/> -->

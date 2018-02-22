@@ -149,4 +149,5 @@ hideElementByClass('GoogleActiveViewClass');
 hideElementByClass('rh');
 changeEmbed('html-embed-medium');
 
+alert(document.getElementsByTagName("img"));
 

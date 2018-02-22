@@ -18,10 +18,10 @@
 			 <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://fileslink.com/" _src="image.htm" supportZoom="false" controls="none" defaultImg="#01ffffff">
                 <LINKMAP>					
                     <!-- 이미지 업로드 -->
-                    <LINK url="http://fileslink.com/*" jsPlugin="js/upload.js" delay="500"/>
+                    <LINK url="http://fileslink.com/*" jsPlugin="/ui/js/upload.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>			
-			<STYLEBUTTON themeId="thLabel1" layout="110,360,90,30" text="이미지링크복사" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
+			<STYLEBUTTON themeId="thLabel1" layout="120,360,90,30" text="이미지링크복사" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
 			<WINDOW layout="100,340,320,200" align="linear:center" >
 				<LABEL id="help" themeId="help" layout="auto,auto" text="이미지 팝업 닫기는 상단에 뒤로가기 버튼을 눌러주세요."  visible="invisible"/>
 			</WINDOW>

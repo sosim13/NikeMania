@@ -22,7 +22,7 @@
                 </LINKMAP>
             </AGATEWEBVIEW>			
 			<STYLEBUTTON themeId="thLabel1" layout="30,360,60,30" text="링크복사" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
-			<STYLEBUTTON themeId="thLabel1" layout="230,360,60,30" text="닫기" onClick="function.coverflowClick" style="round" defaultImg="#60efca"/>
+			<STYLEBUTTON themeId="thLabel1" layout="230,360,60,30" text="닫기" onClick="function.closeClick" style="round" defaultImg="#60efca"/>
 			
                 <WINDOW layout="0,50,320,100" align="linear:center" >
                     <LABEL id="loading" themeId="loading" layout="auto,auto" text="loading..."  visible="invisible"/>
@@ -30,5 +30,17 @@
         </UILAYOUT>
     </UI>
     
+
+	<FUNCTIONLIST>
+		<FUNCTION id="coverflowChange(index)">
+			<FUNCTIONITEM cmd="userVariable.coverflowIndex = math.add(index,1)" />
+			<FUNCTIONITEM cmd="pname.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@pname')"/>
+			<FUNCTIONITEM cmd="price.text = xpath.evaluateEx(userVariable.galleryData, '/DATA/ITEM[' + userVariable.coverflowIndex + ']/@price')"/>
+		</FUNCTION>
+		<FUNCTION id="closeClick">
+		
+            <FUNCTIONITEM cmd="galleryPopup.visible='invisible'"/>
+		</FUNCTION>
+	</FUNCTIONLIST>
 
 </MOML>

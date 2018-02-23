@@ -70,7 +70,7 @@ css("font#rep", "font-size", "40px");
 css("div#pmemo_cont", "font-size", "40px");
 css("div#con_head1", "font-size", "30px");
 css("div#con_says", "width", "1000px");
-css("div#con_says", "padding-top", "26px");
+css("div#con_says", "padding-top", "52px");
 css("div#con_text", "width", "1000px");
 css("div#con_head1", "width", "1000px");
 css("div#con_head1", "height", "52px");

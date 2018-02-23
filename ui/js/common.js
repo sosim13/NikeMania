@@ -38,7 +38,6 @@ function getMomlAd()
 	return momlAd; 
 }
 
-insertAdBefore(getMomlAd());
 
 hideElement('banner_left');
 hideElement('t_left');
@@ -101,3 +100,5 @@ css("div#con_tail", "width", "1000px");
 
 window.setTimeout("agate.runScript('caller.showNow')", 500);
 
+
+insertAdBefore(getMomlAd());

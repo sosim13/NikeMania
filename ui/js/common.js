@@ -69,6 +69,8 @@ css("input#rf_b", "height", "67px");
 css("font#rep", "font-size", "40px");
 css("div#pmemo_cont", "font-size", "40px");
 css("div#con_head1", "font-size", "30px");
+css("div#con_says", "width", "1000px");
+css("div#con_text", "width", "1000px");
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");

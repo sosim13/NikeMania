@@ -65,6 +65,7 @@ css("table.rp_box2", "width", "1000px");
 css("table.rp_box2", "margin", "10px 0px 10px 0px");
 css("div#con_text", "font-size", "50px");
 css("div#con_text", "padding-top", "30px");
+css("div#login_head", "font-size", "50px");
 css("input#rf_b", "width", "90px");
 css("input#rf_b", "height", "67px");
 css("font#rep", "font-size", "40px");

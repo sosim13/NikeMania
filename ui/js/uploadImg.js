@@ -130,17 +130,8 @@ function
 // 2014/01/08 에 서버 페이지가 변경됨
 
 hideElementByClass('ads-layout_bottom');
+hideElementByClass('site-header');
 
-
-// 글꼴 추가
-addMomlFont("/res/UnGraphicBold.ttf"); 
-addMomlFont("/res/QumpellkaNo12.otf"); 
-
-css("body", "font-family", "UnGraphicBold");
-css("dd.price", "font-family", "QumpellkaNo12");
-
-// 상품명 문자열 정렬 변경
-adjustTextAlign();
    
   
 hideElementByClass('GoogleActiveViewClass');

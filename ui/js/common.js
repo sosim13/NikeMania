@@ -72,6 +72,7 @@ css("div#con_head1", "font-size", "30px");
 css("div#con_says", "width", "1000px");
 css("div#con_text", "width", "1000px");
 css("div#con_head1", "width", "1000px");
+css("div#con_head1", "height", "52px");
 css("div#con_tail", "width", "1000px");
 
 

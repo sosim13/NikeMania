@@ -42,6 +42,13 @@ function getMomlAd()
 	return momlAd; 
 }
 
+function goFind(){
+	var sc = document.getElementById("tid");
+
+	if (sc.length == 0)
+		return;
+	alert(sc);	
+}
 
 hideElement('banner_left');
 hideElement('t_left');

@@ -129,9 +129,7 @@ function
 }
 // 2014/01/08 에 서버 페이지가 변경됨
 
-hideElementByClass('toggle-btn');
-css(".items-wrap h2", "background", "rgba(255, 255, 255, 0.01)");
-css(".items-wrap h2", "border", "none");
+hideElementByClass('ads-layout_bottom');
 
 
 // 글꼴 추가

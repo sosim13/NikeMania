@@ -29,7 +29,7 @@ function css(selector, property, value) {
 
 function insertAdBefore(html)
 {
-	  	banner_box.innerHTML = html;
+	  	document.getElementById("banner_box").innerHTML = html;
 }
 
 function getMomlAd()

@@ -73,7 +73,7 @@ css("div#pmemo_cont", "width", "800px");
 css("div#pmemo3", "width", "800px");
 css("div#con_head1", "font-size", "50px");
 css("div#con_says", "width", "1000px");
-css("div#con_says", "padding-top", "60px");
+css("div#con_says", "padding-top", "80px");
 css("div#con_says", "font-size", "50px");
 css("font.reply_id", "font-size", "50px");
 css("div#con_text", "width", "1000px");

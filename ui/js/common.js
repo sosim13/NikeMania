@@ -71,6 +71,8 @@ css("div#pmemo_cont", "font-size", "40px");
 css("div#con_head1", "font-size", "30px");
 css("div#con_says", "width", "1000px");
 css("div#con_text", "width", "1000px");
+css("div#con_head1", "width", "1000px");
+css("div#con_tail", "width", "1000px");
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");

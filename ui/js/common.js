@@ -68,7 +68,7 @@ css("input#rf_b", "width", "90px");
 css("input#rf_b", "height", "67px");
 css("font#rep", "font-size", "50px");
 css("div#pmemo_cont", "font-size", "50px");
-css("div#con_head1", "font-size", "50px");
+css("div#con_head1", "font-size", "30px");
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");

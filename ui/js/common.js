@@ -50,7 +50,7 @@ hideElement('mb_l');
 
 css("body", "background-color", "rgba(255, 255, 255, 0.01)");
 css("#listWrap.index h2 span", "background-color", "rgba(255, 255, 255, 0.01)");
-css("body", "font-size", "24px");
+css("body", "font-size", "32px");
 css("a:link", "font-size", "24px");
 css("a:visited", "font-size", "24px");
 css("a:hover", "font-size", "24px");

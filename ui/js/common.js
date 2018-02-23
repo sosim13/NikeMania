@@ -38,7 +38,7 @@ function getMomlAd()
 	if (sc.length == 0)
 		return;
 
-	var momlAd = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7252630941302629" data-ad-slot="4292477114"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
+	var momlAd = '<script type="text/javascript"> google_ad_client = "ca-pub-7252630941302629"; google_ad_slot = "4292477114"; google_ad_width = 728; google_ad_height = 90;</script><!-- 나매읽기광고 --><script type="text/javascript"src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>';
 	return momlAd; 
 }
 

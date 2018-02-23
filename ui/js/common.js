@@ -74,6 +74,8 @@ css("div#con_head1", "font-size", "50px");
 css("div#con_says", "width", "1000px");
 css("div#con_says", "padding-top", "60px");
 css("div#con_says", "font-size", "50px");
+css("div#con_says", "padding-bottom", "10px");
+css("font.reply_id", "font-size", "50px");
 css("div#con_text", "width", "1000px");
 css("div#con_head1", "width", "1000px");
 css("div#con_head1", "height", "52px");

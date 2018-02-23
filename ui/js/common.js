@@ -68,6 +68,7 @@ css("input#rf_b", "width", "90px");
 css("input#rf_b", "height", "67px");
 css("font#rep", "font-size", "40px");
 css("div#pmemo_cont", "font-size", "40px");
+css("div#pmemo_cont", "width", "800px");
 css("div#con_head1", "font-size", "50px");
 css("div#con_says", "width", "1000px");
 css("div#con_says", "padding-top", "52px");

@@ -27,6 +27,19 @@ function css(selector, property, value) {
     }
 }
 
+function insertAdBefore(html)
+{
+	  	banner_box.innerHTML = html;
+}
+
+function getMomlAd()
+{
+	var momlAd = '<div style="width: 100%;"><div class="adBar" id="adBar" style="padding-top: 13%;" ><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7252630941302629" data-ad-slot="4292477114"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>';
+	return momlAd; 
+}
+
+insertAdBefore(getMomlAd());
+
 hideElement('banner_left');
 hideElement('t_left');
 hideElement('mb_l');
@@ -73,6 +86,7 @@ css("div#pmemo_cont", "font-size", "40px");
 css("div#pmemo_cont", "width", "800px");
 css("div#pmemo3", "width", "800px");
 css("div#con_head1", "font-size", "50px");
+css("table.reply_box td#rp_right", "font-size", "50px");
 css("div#con_says", "width", "1000px");
 css("div#con_says", "padding-top", "80px");
 css("div#con_says", "font-size", "50px");

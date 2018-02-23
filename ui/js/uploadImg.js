@@ -130,7 +130,7 @@ function
 // 2014/01/08 에 서버 페이지가 변경됨
 
 hideElementByClass('ads-layout_bottom');
-hideElementByClass('site-header');
+hideElement('masthead');
 
    
   

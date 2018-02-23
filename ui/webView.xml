@@ -16,9 +16,7 @@
             <AGATEWEBVIEW id="webView" layout="0,30,320,390" src="http://nikemania.com" _src="main.htm" supportZoom="true" controls="none" defaultImg="#01ffffff" jsBridge="false">
                 <LINKMAP>
                     <!-- main page url을 모두 써준다.-->
-                    <LINK url="http://mulawear.com/m/" jsPlugin="js/main.js" delay="500"/>
-                    <LINK url="http://mulawear.com/m/main.html" jsPlugin="js/main.js" delay="500"/>
-                    <LINK url="http://mulawear.com/m/index.html" jsPlugin="js/main.js" delay="500"/>
+                    <LINK url="http://nikemania.com/bbs/bbs_read.php*" jsPlugin="js/main.js" delay="500"/>
 
                     <!-- 공통 -->
                     <LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/>

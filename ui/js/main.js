@@ -151,4 +151,6 @@ window.setTimeout(enlargeImage, 500); // 가끔 이미지가 나중에 보여지
 window.setTimeout(enlargeImage, 1000); // 가끔 이미지가 나중에 보여지면서 안커지는 경우가 있어서 적당한 시간 뒤에 재실행하도록 함.
 
 
-  
+if(document.getElementById("con_says").click()){
+	alert("1 : "+document.getElementById("con_says"));
+}

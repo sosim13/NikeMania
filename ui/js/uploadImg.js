@@ -129,14 +129,9 @@ function
 }
 // 2014/01/08 에 서버 페이지가 변경됨
 
-hideElementByClass('ads-layout_bottom');
-hideElement('masthead');
-
-   
+hideElementByClass('container-fluid');
+hideElementByClass('bottom-menu container');
   
-hideElementByClass('GoogleActiveViewClass');
-hideElementByClass('rh');
-changeEmbed('html-embed-medium');
-
+  
 enlargeImage();
 

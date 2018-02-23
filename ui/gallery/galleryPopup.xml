@@ -15,10 +15,10 @@
 
 	<UI>
 		<UILAYOUT portrait="320,390" landscape="320,390" theme="themeMenu" >
-			 <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://image.kilho.net" _src="image.htm" supportZoom="true" controls="none" defaultImg="#01ffffff" jsBridge="false">
+			 <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="https://postimages.org" _src="image.htm" supportZoom="true" controls="none" defaultImg="#01ffffff" jsBridge="false">
                 <LINKMAP>					
                     <!-- 이미지 업로드 -->
-                    <LINK url="http://image.kilho.net/*" jsPlugin="../js/uploadImg.js" delay="500"/>
+                    <LINK url="https://postimages.org/*" jsPlugin="../js/uploadImg.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>		 	
 			<!-- <STYLEBUTTON themeId="thLabel1" layout="100,360,60,30" text="링크복사" onClick="document.getElementByClassName('input').click()" style="round" defaultImg="#ff7e3c"/>

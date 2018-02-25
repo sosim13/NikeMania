@@ -113,6 +113,7 @@ window.setTimeout("agate.runScript('caller.showNow')", 500);
 
 function imageAdd(index, html)
 {
+	alert("1");
 	var sc = document.getElementsById(index);
 	if (sc.length == 0)
 		return;

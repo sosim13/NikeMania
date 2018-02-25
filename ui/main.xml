@@ -100,11 +100,11 @@
 
 
     <FUNCTIONLIST>
-        <FUNCTION id="slide">
+        <FUNCTION id="slide_back">
             <FUNCTIONITEM condition="userVariable.galleryVisible=='true'" cmd="galleryPopup.visible='invisible'"/>
             <FUNCTIONITEM condition="userVariable.slideAnimationEnd == 'true'" cmd="function.slideDo"/>
         </FUNCTION>
-        <FUNCTION id="slideDo">
+        <FUNCTION id="slide">
             <FUNCTIONITEM cmd="userVariable.slideAnimationEnd = 'false'"/>
             <FUNCTIONITEM condition="userVariable.menuView=='0'" cmd="function.slideFold" elseCmd="function.slideUnfold"/>
         </FUNCTION>

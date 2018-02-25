@@ -159,7 +159,6 @@ addMomlFont("/res/QumpellkaNo12.otf");
 
 css("body", "font-family", "UnGraphicBold");
 css("dd.price", "font-family", "QumpellkaNo12");
-css("a:link", "font-size", "30pt");
 
 // 상품명 문자열 정렬 변경
 adjustTextAlign();

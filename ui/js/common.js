@@ -53,6 +53,7 @@ function goFind(){
 hideElement('banner_left');
 hideElement('t_left');
 hideElement('mb_l');
+hideElement('head');
 
 
 

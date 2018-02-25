@@ -102,7 +102,7 @@ function enlargeImage()
     if (dd && dd.nodeName.toLowerCase() == "div") {
   		var dl = dd.parentNode;
   			if (dl && dl.nodeName.toLowerCase() == "td") {
-			    img.style.width = "800px";
+			    img.style.width = "980px";
 			}
 	}
 //    img.style.height = "115px";

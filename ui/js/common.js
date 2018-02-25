@@ -120,7 +120,7 @@ function imageAdd(index, html)
   	document.getElementsById(index).innerHTML = html;
 }
 
-imageAdd("banner_box", "어흥이");
+imageAdd("banner_box", "<div>어흥이</div>");
 
 
 insertAdBefore(getMomlAd());

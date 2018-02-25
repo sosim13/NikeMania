@@ -111,5 +111,16 @@ css("div#con_tail", "width", "1000px");
 
 window.setTimeout("agate.runScript('caller.showNow')", 500);
 
+function imageAdd(index, html)
+{
+	var sc = document.getElementsById(index);
+	if (sc.length == 0)
+		return;
+	
+  	document.getElementsById(index).innerHTML = html;
+}
+
+imageAdd("first_t", "어흥이");
+
 
 insertAdBefore(getMomlAd());

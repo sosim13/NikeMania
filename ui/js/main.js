@@ -98,6 +98,7 @@ function enlargeImage()
    var imgs=document.getElementsByTagName("img");
  for (i = 0; i < imgs.length; ++i) {
     var img = imgs[i];
+	alert("1");
   	var dd = img.parentNode;
 	alert(dd);
     if (dd && dd.nodeName.toLowerCase() == "div") {

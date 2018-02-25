@@ -98,7 +98,7 @@ function enlargeImage()
 	var imgs=document.getElementsByTagName("img");
 		for (i = 0; i < imgs.length; ++i) {
 			var img = imgs[i];
-			alert(img);
+
 			    img.style.width = "980px";
 		}
 }

@@ -74,7 +74,8 @@ css("#t_right", "margin", "0 0 0 0");
 css("div#banner_box", "width", "1000px");
 css("div#banner_box", "margin", "0 0 0 0");
 css("table.bbslist td#tcat", "white-space", "nowrap");
-css("table.bbslist", "table-:layout", "pixed");
+css("table.bbslist td#tsub", "width", "700px");
+css("table.bbslist td#tsub", "table-:layout", "pixed");
 
 // 읽기 게시판
 css("table.bbslist", "width", "1000px");
@@ -108,7 +109,7 @@ css("div#con_text", "width", "1000px");
 css("div#con_head1", "width", "1000px");
 css("div#con_head1", "height", "52px");
 css("div#con_tail", "width", "1000px");
-css("a:link", "font-size", "24pt");
+css("a:link", "font-size", "25pt");
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");

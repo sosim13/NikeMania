@@ -73,6 +73,7 @@ css("table.bbslist", "width", "1000px");
 css("#t_right", "margin", "0 0 0 0");
 css("div#banner_box", "width", "1000px");
 css("div#banner_box", "margin", "0 0 0 0");
+css("table.bbslist td#tcat", "white-space", "nowrap");
 
 // 읽기 게시판
 css("table.bbslist", "width", "1000px");

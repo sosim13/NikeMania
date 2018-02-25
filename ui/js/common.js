@@ -72,6 +72,7 @@ css("table.bbslist td#tdate", "font-size", "1px");
 css("table.bbslist", "width", "1000px");
 css("#t_right", "margin", "0 0 0 0");
 css("div#banner_box", "width", "1000px");
+css("div#r_index", "width", "1000px");
 css("div#banner_box", "margin", "0 0 0 0");
 css("table.bbslist td#tcat", "white-space", "nowrap");
 css("table.bbslist td#tsub", "width", "700px");

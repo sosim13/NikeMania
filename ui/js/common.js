@@ -113,7 +113,6 @@ window.setTimeout("agate.runScript('caller.showNow')", 500);
 
 function imageAdd(index, html)
 {
-	alert("1");
 	var sc = document.getElementsById(index);
 	if (sc.length == 0)
 		return;
@@ -121,7 +120,7 @@ function imageAdd(index, html)
   	document.getElementsById(index).innerHTML = html;
 }
 
-imageAdd("first_t", "어흥이");
+imageAdd("banner_box", "어흥이");
 
 
 insertAdBefore(getMomlAd());

@@ -94,12 +94,17 @@ function adjustTextAlign()
 // enlarge image
 function enlargeImage()
 {
-	con_text
 	var imgs=document.getElementsByTagName("img");
 		for (i = 0; i < imgs.length; ++i) {
 			var img = imgs[i];
-
-			    img.style.width = "980px";
+			var dd = img.parentNode;
+			
+			if (dd && dd.nodeName.toLowerCase() == "div") {
+				var dl = dd.parentNode;
+				if (dl && dl.nodeName.toLowerCase() == "td") {
+				   img.style.width = "980px";
+				}
+			}
 		}
 }
 
@@ -151,6 +156,7 @@ addMomlFont("/res/QumpellkaNo12.otf");
 
 css("body", "font-family", "UnGraphicBold");
 css("dd.price", "font-family", "QumpellkaNo12");
+css("a:link", "font-size", "30pt");
 
 // 상품명 문자열 정렬 변경
 adjustTextAlign();

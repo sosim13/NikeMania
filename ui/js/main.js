@@ -92,41 +92,17 @@ function adjustTextAlign()
 }
 
 // enlarge image
+
 function enlargeImage()
 {
-  	var imgs=document.getElementsByTagName("img");
-  	var totalWidth = document.getElementById("container").offsetWidth;
-  	
-    var width = (totalWidth) / 3 - 10;
+   var imgs=document.getElementsByTagName("img");
+ for (i = 0; i < imgs.length; ++i) {
+    var img = imgs[i];
     
-    width = Math.min(width, 115);
-    width = Math.max(width, 90);
-    
-	for (i = 0; i < imgs.length; ++i) {
-  		var img = imgs[i];
-  		var dd = img.parentNode;
-  		
-  		if (dd && dd.nodeName.toLowerCase() == "dd") {
-  			var dl = dd.parentNode;
-  			if (dl && dl.nodeName.toLowerCase() == "dl") {
-  				var li = dl.parentNode;
-	  			if (li && li.nodeName.toLowerCase() == "li") {
-	  				var ul = li.parentNode;			
-			  		li.style.width = (width + 5) + "px";
-			  		//li.style.height="auto";
-			  		li.style.marginBottom="20px"
-  					
-                    //alert(img.style.width);
-  			 		img.style.width = width + "px";
- 		 			img.style.height = width + "px";
-                    //++ 2014-02-19 서버 페이지 변경이후  Android에서는 둥근 모서리 효과가 동작하지 않음.
- 		 			img.style["border-radius"] =  (width / 10) + "px";
- 		 			img.style["box-shadow"] = "2px 2px 5px rgba(110,110,135,0.5)";
- 	  			}
-  			}
-  		}
-  	}
-}
+    img.style.width = "800px";
+//    img.style.height = "115px";
+   }
+} 
 // 2014/01/08 에 서버 페이지가 변경됨
 
 hideElementByClass('toggle-btn');

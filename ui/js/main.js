@@ -99,6 +99,7 @@ function enlargeImage()
  for (i = 0; i < imgs.length; ++i) {
     var img = imgs[i];
   	var dd = img.parentNode;
+	alert(dd);
     if (dd && dd.nodeName.toLowerCase() == "div") {
   		var dl = dd.parentNode;
 //  			if (dl && dl.nodeName.toLowerCase() == "td") {

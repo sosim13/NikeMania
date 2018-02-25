@@ -99,12 +99,13 @@ function enlargeImage()
 		for (i = 0; i < imgs.length; ++i) {
 			var img = imgs[i];
 			var dd = img.parentNode;
+			alert(dd);
 				if (dd && dd.nodeName.toLowerCase() == "div") {
   					var dl = dd.parentNode;
 				}
 			    img.style.width = "980px";
 		}
-} 
+}
 
 function enlargeImage2()
 {

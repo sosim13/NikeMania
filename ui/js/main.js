@@ -98,11 +98,7 @@ function enlargeImage()
 	var imgs=document.getElementsByTagName("img");
 		for (i = 0; i < imgs.length; ++i) {
 			var img = imgs[i];
-			var dd = img.parentNode;
-			alert(dd);
-				if (dd && dd.nodeName.toLowerCase() == "div") {
-  					var dl = dd.parentNode;
-				}
+			alert(img);
 			    img.style.width = "980px";
 		}
 }

@@ -95,21 +95,17 @@ function adjustTextAlign()
 function enlargeImage()
 {
 	con_text
-   var imgs=document.getElementsByTagName("img");
- for (i = 0; i < imgs.length; ++i) {
-    var img = imgs[i];
-	alert("1");
-  	var dd = img.parentNode;
-	alert(dd);
-    if (dd && dd.nodeName.toLowerCase() == "div") {
-  		var dl = dd.parentNode;
-//  			if (dl && dl.nodeName.toLowerCase() == "td") {
+	var imgs=document.getElementsByTagName("img");
+		for (i = 0; i < imgs.length; ++i) {
+			var img = imgs[i];
+			var dd = img.parentNode;
+				if (dd && dd.nodeName.toLowerCase() == "div") {
+  					var dl = dd.parentNode;
+				}
 			    img.style.width = "980px";
-//			}
-	}
-//    img.style.height = "115px";
-   }
+		}
 } 
+
 function enlargeImage2()
 {
   	var imgs=document.getElementsByTagName("img");

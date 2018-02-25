@@ -94,7 +94,10 @@ function adjustTextAlign()
 // enlarge image
 function enlargeImage()
 {
+	
+			alert("1");
 	var imgs=document.getElementsByTagName("img");
+				alert("2");
 		for (i = 0; i < imgs.length; ++i) {
 			var img = imgs[i];
 			var dd = img.parentNode;

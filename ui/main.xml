@@ -169,7 +169,7 @@
 
         <FUNCTION id="gallery">
 		
-			<FUNCTIONITEM cmd="url:galleryPopup.xml" target="root.new" />
+			<FUNCTIONITEM cmd="url:./gallery/galleryPopup.xml" target="root.new" />
             <!-- <FUNCTIONITEM cmd="galleryPopup.visible='visible'"/>
             <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/> -->
         </FUNCTION>

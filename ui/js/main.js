@@ -94,21 +94,17 @@ function adjustTextAlign()
 // enlarge image
 function enlargeImage()
 {
-	
-			alert("1");
-	var imgs=document.getElementsByTagName("img");
-				alert("2");
-		for (i = 0; i < imgs.length; ++i) {
-			var img = imgs[i];
-			var dd = img.parentNode;
-			alert(dd);
-			if (dd && dd.nodeName.toLowerCase() == "div") {
-				var dl = dd.parentNode;
-				if (dl && dl.nodeName.toLowerCase() == "td") {
-				   img.style.width = "980px";
-				}
-			}
-		}
+	img.style.width = "980px";
+	//setStatusText('loading.');
+  	var imgs=document.getElementsByTagName("img");
+  	var imgSrcs = new Array();
+	for (i = 0; i < imgs.length; ++i) {
+  		var img = imgs[i];
+  		if (img.src.indexOf("/bbs/icon/") >= 0)
+  			img.style.width = "71px";
+		if (img.src.indexOf("/members/icon/") >= 0)
+  			img.style.width = "100px";
+  	}
 }
 
 function enlargeImage2()

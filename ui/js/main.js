@@ -101,10 +101,10 @@ function enlargeImage()
   		var img = imgs[i];
 			
 		img.style.width = "980px";
-  		if (img.src.indexOf("/bbs/icon/") >= 0)
-  			img.style.width = "71px";
-		if (img.src.indexOf("/members/icon/") >= 0)
-  			img.style.width = "100px";
+//  		if (img.src.indexOf("/bbs/icon/") >= 0)
+//  			img.style.width = "71px";
+//		if (img.src.indexOf("/members/icon/") >= 0)
+//  			img.style.width = "100px";
   	}
 }
 

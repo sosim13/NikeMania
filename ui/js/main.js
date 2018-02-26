@@ -96,11 +96,11 @@ function enlargeImage()
 {
 	//setStatusText('loading.');
   	var imgs=document.getElementsByTagName("img");
-	
-	img.style.width = "980px";
 
 	for (i = 0; i < imgs.length; ++i) {
   		var img = imgs[i];
+			
+		img.style.width = "980px";
   		if (img.src.indexOf("/bbs/icon/") >= 0)
   			img.style.width = "71px";
 		if (img.src.indexOf("/members/icon/") >= 0)

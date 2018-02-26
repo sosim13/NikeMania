@@ -168,7 +168,7 @@
         </FUNCTION>
 
         <FUNCTION id="gallery">
-            <FUNCTIONITEM cmd="container.open('galleryPopup.xml')"/>
+            <FUNCTIONITEM cmd="container.open('galleryPopup.xml','root')"/>
             <FUNCTIONITEM cmd="galleryPopup.visible='visible'"/>
             <FUNCTIONITEM condition="userVariable.galleryVisible!='true'" cmd="galleryPopup.src='/ui/gallery/galleryPopup.xml'"/>
         </FUNCTION>

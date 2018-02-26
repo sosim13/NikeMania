@@ -21,7 +21,7 @@
                     <LINK url="https://postimages.org/*" jsPlugin="../js/uploadImg.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>		 	
-			<STYLEBUTTON themeId="thLabel1" layout="100,360,60,30" text="링크복사" onClick="code_direct.click" style="round" defaultImg="#ff7e3c"/>
+			<STYLEBUTTON themeId="thLabel1" layout="100,360,60,30" text="링크복사" onClick="code_direct.functionClick" style="round" defaultImg="#ff7e3c"/>
 			<STYLEBUTTON themeId="thLabel1" layout="170,360,40,30" text="닫기" onClick="container.close" style="round" defaultImg="#ff7e3c"/>
         </UILAYOUT>
     </UI>

@@ -79,7 +79,7 @@
             </WINDOW>
             <CONTAINER id="galleryPopup" layout="0,30,320,390" visible="invisible"/>
             <WINDOW layout="0,0,320,30" defaultImg="#a0ffffff">
-                <IMAGE layout="120,5,100,20" defaultImg="logo.png"/>
+                <IMAGE layout="100,5,100,20" defaultImg="logo.png"/>
                 <STYLEBUTTON layout="5,5,50,20" themeId="titleBarBtn" text="▤" onClick="function.slide"/>
                 <STYLEBUTTON layout="235,5,20,20" themeId="titleBarBtn" text="◁" onClick="function.back"/>
                 <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="이미지" onClick="function.gallery"/>

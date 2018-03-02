@@ -22,7 +22,7 @@
                     <LINK url="http://sosim13p.cafe24.com/img/*" jsPlugin="../js/uploadImg.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>		 				
-			<STYLEBUTTON themeId="thLabel1" layout="170,240,80,30" text="닫기" onClick="container.close" style="round" defaultImg="#f0f0f0"/>
+			<STYLEBUTTON themeId="thLabel1" layout="120,320,80,30" text="닫기" onClick="container.close" style="round" defaultImg="#f0f0f0"/>
         </UILAYOUT>
     </UI>
     

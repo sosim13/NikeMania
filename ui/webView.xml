@@ -22,7 +22,7 @@
                     <LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/>
 					
                     <!-- 자동로그인 -->
-                    <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/>
+                    <!-- <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/> -->
                     <!-- <LINK url="http://nikemania.com/m/m.php" onFinish="function.fillOrderInfo" delay="1000"/> -->
 
                     <!-- 블로그 검색 -->

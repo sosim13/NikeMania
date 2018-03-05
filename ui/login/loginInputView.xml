@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOML version="1.0.0">
+
+	<THEMES id="themelogin" >
+		<THEME id="logintextbox" layout="290,60" fontSize="25" margin="20,0,0,0"  />
+		<THEME id="loginbtn" defaultImg="#343434"  pressedImg="#000000" layout="116,116" fontSize="30" onClick="saveVariable.id=id_input.text, saveVariable.passwd=passwd_input.text, userVariable.connectRequest = 'login', function.root.loginConnect"  />
+	</THEMES>
+    
+	<UILAYOUT portrait="480,390" theme="themelogin" >   
+
+		<WINDOW layout="0,0,480,390" align="linear:vertical" defaultImg="#ffffff" onCreate="function.setData">
+
+			<WINDOW layout="480,170"  align="linear:horizental|left" >
+				<WINDOW layout="320,160"  align="linear:vertical|left"  >
+					<EDIT id="id_input" themeId="logintextbox" placeHolder="아이디"  />
+					<EDIT id="passwd_input" themeId="logintextbox"  placeHolder="비밀번호" textFormat="textPassword" />
+				</WINDOW>
+				<WINDOW layout="120,120" align="flow:center" defaultImg="#55aa66">
+					<BUTTON id="login_input" themeId="loginbtn" text="login" fontColor="#55aa66" />
+				</WINDOW>
+			</WINDOW>	
+
+			<CHECKBOX id="auto_login" text="자동 로그인" layout="250,35" fontSize="20" margin="20,0,0,0" onClick="saveVariable.autologin = caller.selected" />
+		</WINDOW>
+
+	</UILAYOUT>
+
+	<FUNCTION id="setData">	   		
+		<CMD cmd="saveVariable.autologin=0, saveVariable.id='', saveVariable.passwd=''"/> 
+		<CMD cmd="function.root.changeTitle('Input Login Data')"/> 
+	</FUNCTION>	
+
+
+</MOML>

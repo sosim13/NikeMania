@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MOML>
+
+    <THEMES id="themetapbtn" >
+        <THEME id="tapbtnpressed" layout="120,60" defaultImg="#000000" pressedImg="#343434" fontColor="#55aa66" textAlign="center" fontSize="21" />
+        <THEME id="tapbtn" layout="120,60" defaultImg="#343434" pressedImg="#000000" fontColor="#55aa66" textAlign="center" fontSize="21" />
+    </THEMES>
+
+    <UILAYOUT portrait="480,770" theme="themetapbtn" >
+        <LABEL id="logintitle" layout="0,0,480,70" defaultImg="#000000" fontColor="#55aa66" textAlign="center" fontSize="21" text="Login Sample" />
+
+        <WINDOW layout="0,70,480,630" defaultImg="#ffffff" >
+
+            <NAVIGATIONCONTAINER id="startLoginNavigation" layout="0,30,480,390" selectItem="loginCheckView" >
+                <VIEWITEM id="loginCheckView" src="loginCheckView.xml" transitionInEffect="none"/>	        	    
+                <VIEWITEM id="loginInputView" src="loginInputView.xml" transitionInEffect="slide:rightIn|leftOut"/>
+                <VIEWITEM id="loginLogoutView" src="loginLogoutView.xml" transitionInEffect="slide:rightIn|leftOut"/>
+            </NAVIGATIONCONTAINER>
+
+        </WINDOW> 
+        
+        <WINDOW layout="0,700,480,70" align="linear:left|bottom" defaultImg="#000000" >
+            <BUTTON id="btn1" themeId="tapbtn"  text="Tap1" onClick="caller.themeId='tapbtnpressed'"/>
+            <BUTTON id="btn2" themeId="tapbtnpressed"  text="Tap2" />
+            <BUTTON id="btn3" themeId="tapbtn" text="Tap3" />
+            <BUTTON id="btn4" themeId="tapbtn" text="Tap4" />
+        </WINDOW>
+    </UILAYOUT>
+
+    <CMD cmd="function.checkAutoLogin" />
+
+    <FUNCTION id="Log(type,log)" >
+        <!-- <CMD condition="type==0"  cmd="device.toastPopup(log)" /> -->
+        <CMD condition="type==1" cmd="device.systemPopup('logmsg',log,'done', '', '')"/>
+    </FUNCTION>
+
+
+ <!-- tap button -->
+    <FUNCTION id="tapButton(type,log)" >
+        <CMD condition="type==0"  cmd="device.toastPopup(log)" />
+        <CMD condition="type==1" cmd="device.systemPopup('logmsg',log,'done', '', '')"/>
+    </FUNCTION>        
+
+    <FUNCTION id="changeTitle(title)" >
+        <CMD cmd="root.logintitle.text=title, animation.show('root.logintitle', 'fade', '', 1000, '')" />  
+    </FUNCTION>
+
+<!-- check autologin -->
+    <FUNCTION id="checkAutoLogin" >
+        <CMD cmd="function.Log(0,'checkAutoLogin')" /> 
+        <CMD condition="saveVariable.autologin==1" 
+            cmd="function.loginConnect" 
+            elseCmd="startLoginNavigation.selectedItem = 'loginInputView'" />
+    </FUNCTION>
+
+
+<!-- login connect-->
+    <FUNCTION id="loginConnect" >
+        <CMD cmd="function.Log(0,'loginConnect')" /> 
+        <CMD cmd="userVariable.connectRequest='login',function.sendData" />
+    </FUNCTION>
+
+<!-- login connect-->
+    <FUNCTION id="logoutConnect" >
+        <CMD cmd="function.Log(0,'logoutConnect')" /> 
+        <CMD cmd="userVariable.connectRequest='logout',function.sendData" />
+    </FUNCTION>
+
+<!-- send login logout info -->
+    <FUNCTION id="sendData" >
+        <CMD cmd="function.Log(0,'sendData')" />  
+        <CMD cmd="http.addEventListener('onComplete', 'receiveData')"/>
+        <CMD cmd="userVariable.postReturnValue=http.createRequestId()"/>
+
+        <CMD condition="userVariable.connectRequest == 'login'" cmd="http.post(userVariable.postReturnValue, 'http://www.remote.com/mobileAppl/login_Proc.php', 'member_id='+saveVariable.id+ '|pwd=' +saveVariable.passwd+ '' )" />                
+
+        <CMD condition="userVariable.connectRequest == 'logout'" cmd="http.post(userVariable.postReturnValue, 'http://www.remote.com/mobileAppl/logout.php', 'member_id='+saveVariable.id+ '' )" />
+
+    </FUNCTION>
+
+<!-- display login, logout result -->
+    <FUNCTION id="receiveData(reqId,result,code,value,errMsg)">
+        <CMD cmd="function.Log(0,'receiveData')" />  
+        <CMD cmd="http.removeEventListener('onComplete', 'receiveData')"/>
+
+        <CMD condition="userVariable.postReturnValue+'' == reqId" 
+            cmd="userVariable.loginResult = xpath.evaluateEx(value, '/DATA/LOGINRESULT/text()'), function.processData" 
+            elseCmd="device.toastPopup('LOGIN / LOGOUT Fail')"/>  
+    </FUNCTION>
+
+    <FUNCTION id="processData">
+        <CMD cmd="function.Log(0,'receiveData')" />  
+        <CMD condition="userVariable.loginResult=='1'" 
+            cmd="function.goView" 
+            elseCmd="saveVariable.autologin=0,device.toastPopup('LOGIN / LOGOUT Result Fail')"/>   
+    </FUNCTION> 
+
+    <FUNCTION id="goView">          
+        <CMD cmd="function.Log(0,'goView')" />
+        <CMD condition="userVariable.connectRequest == 'login'" 
+            cmd="root.startLoginNavigation.selectedItem = 'loginLogoutView'"/>
+
+        <CMD condition="userVariable.connectRequest == 'logout'" 
+            cmd="root.startLoginNavigation.selectedItem = 'loginInputView'"/>                          
+    </FUNCTION>
+
+</MOML>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOML version="1.0.0">
+	<UILAYOUT portrait="480,390" >   
+
+		<WINDOW layout="0,0,480,390"  align="linear:vertical|center" defaultImg="#ffffff" onCreate="function.root.changeTitle('Auto Login Check')" >
+
+			<LABEL layout="300,40" text="Check Auto Login" fontSize="30" fontStyle="bold" textAlign="center" fontColor="#000000"  />
+
+		</WINDOW>
+
+	</UILAYOUT>
+</MOML>

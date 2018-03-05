@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MOML>
+	<APPLICATIONINFO>
+		<!-- Load xml file in asset.-->
+		<START url="startLoginNavigation.xml" />
+		<UPDATEINFO realTimeType="all"/>
+		<!-- common Theme set --> 
+        <DEBUG suppressError="none"/>
+	</APPLICATIONINFO>
+</MOML>

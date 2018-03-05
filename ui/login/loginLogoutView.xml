@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOML version="1.0.0">
+        
+	<UILAYOUT portrait="480,390" > 
+		<WINDOW layout="0,0,480,390"  align="linear:vertical|center" defaultImg="#ffffff" onCreate="function.root.changeTitle('Check Logout')">
+
+			<BUTTON id="btnLogout" defaultImg="#55aa66" text="logout" pressedImg="#000000" layout="240,240" fontSize="30" margin="10,0,0,0" onClick="userVariable.connectRequest='logout',saveVariable.autologin=0,function.root.logoutConnect"  />
+
+		</WINDOW>
+	</UILAYOUT>
+
+</MOML>

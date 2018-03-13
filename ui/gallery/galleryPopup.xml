@@ -19,7 +19,7 @@
 			 <!-- <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://sosim13p.cafe24.com/img/index.jsp" _src="image.htm" supportZoom="true" controls="none" defaultImg="#01Ffffff" jsBridge="false"> -->
                 <LINKMAP>					
                     <!-- 이미지 업로드 https://postimages.org-->
-                    <LINK url="http://sosim13p.cafe24.com/img/*" jsPlugin="../js/uploadImg.js" delay="500"/>
+                    <LINK url="http://sosim13p.cafe24.com/cloudinary/*" jsPlugin="../js/uploadImg.js" delay="500"/>
                 </LINKMAP>
             </AGATEWEBVIEW>		 				
 			<STYLEBUTTON themeId="thLabel1" layout="120,320,80,30" text="닫기" onClick="container.close" style="round" defaultImg="#f0f0f0"/>

@@ -52,7 +52,7 @@ function goFind(){
 
 function goZoom()
 {
-  	document.body.style.zoom='100%';
+  	document.body.style.zoom='200%';
 }
 
 hideElement('banner_left');

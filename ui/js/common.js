@@ -117,6 +117,7 @@ css("div#con_head1", "width", "1000px");
 css("div#con_head1", "height", "52px");
 css("div#con_tail", "width", "1000px");
 css("a:link", "font-size", "25pt");
+css("img", "width", "100%");
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");

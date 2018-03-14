@@ -15,7 +15,7 @@
 
 	<UI>
 		<UILAYOUT portrait="320,390" landscape="320,390" theme="themeMenu" >
-			 <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://image.na.to" _src="image.htm" supportZoom="false" controls="none" defaultImg="#ffffff" jsBridge="false">
+			 <AGATEWEBVIEW id="webView" layout="0,30,320,390" src="http://image.na.to" _src="image.htm" supportZoom="false" controls="none" defaultImg="#ffffff" jsBridge="false">
 			 <!-- <AGATEWEBVIEW id="webView" layout="0,50,320,390" src="http://sosim13p.cafe24.com/img/index.jsp" _src="image.htm" supportZoom="true" controls="none" defaultImg="#01Ffffff" jsBridge="false"> -->
                 <LINKMAP>					
                     <!-- 이미지 업로드 https://postimages.org-->

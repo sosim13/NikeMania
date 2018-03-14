@@ -82,6 +82,7 @@
             <WINDOW layout="0,0,320,30" defaultImg="#a0ffffff">
                 <IMAGE layout="100,5,100,20" defaultImg="logo.png"/>
                 <STYLEBUTTON layout="5,5,50,20" themeId="titleBarBtn" text="▤" onClick="function.slide"/>
+                <STYLEBUTTON layout="25,5,50,20" themeId="titleBarBtn" text="+" onClick="function.capture"/>
                 <STYLEBUTTON layout="235,5,20,20" themeId="titleBarBtn" text="◁" onClick="function.back"/>
                 <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="이미지" onClick="function.gallery"/>
 				<!-- <STYLEBUTTON layout="265,5,50,20" themeId="titleBarBtn" text="자동로그인" onClick="function.fillOrderInfo"/> -->
@@ -135,6 +136,10 @@
 
             <FUNCTIONITEM cmd="userVariable.slideAnimationEnd = 'true'" delay="400"/>
         </FUNCTION>
+		<FUNCTION id="capture">
+			<CMD cmd="userVariable.capturePath =image.capture('webView', 0,0,webView.width,webView.height)" />
+			<CMD cmd="device.toastPopup(userVariable.capturePath)"/>
+		</FUNCTION>
 
 
         <FUNCTION id="navigation(item)">

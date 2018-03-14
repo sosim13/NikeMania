@@ -55,6 +55,7 @@
                     <STYLEBUTTON themeId="thLeftButton" text="PSI 확인 페이지" onClick="function.navigation('http://nikemania.com/members/m_point_list.php')"/>
                     <STYLEBUTTON themeId="thLeftButton" text="나매공지사항" onClick="function.navigation('http://nikemania.com/bbs/notice_list.php')"/>
                     <STYLEBUTTON themeId="thLeftButton" text="MODIFIED" onClick="function.navigation('http://www.modified.co.kr/')"/>
+                    <STYLEBUTTON themeId="thLeftButton" text="개발자의말" onClick="function.navigation('http://www.modified.co.kr/')"/>
 
                     <LABEL themeId="smallTitle" text="System Menus"/>
                     <STYLEBUTTON themeId="thLeftButton" text="로그인" onClick="function.navigation('http://nikemania.com/m/m.php')"/>

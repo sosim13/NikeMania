@@ -137,7 +137,7 @@
             <FUNCTIONITEM cmd="userVariable.slideAnimationEnd = 'true'" delay="400"/>
         </FUNCTION>
 		<FUNCTION id="capture">
-			<CMD cmd="userVariable.capturePath =image.capture('webView', 0,0,320,510)" />
+			<CMD cmd="userVariable.capturePath =image.capture('webView', 0,0,320,510,0)" />
 			<CMD cmd="device.toastPopup(userVariable.capturePath)"/>
 		</FUNCTION>
 

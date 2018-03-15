@@ -136,4 +136,23 @@ function imageAdd(index, html)
 imageAdd("banner_box", "<div>어흥이</div>");
 
 
+function enlargeImage()
+{
+   var imgs=document.getElementsByTagName("img");
+ for (i = 0; i < imgs.length; ++i) {
+    var img = imgs[i];
+    alert(img.style.width);
+    img.style.width = "115px";
+    img.style.height = "115px";
+   }
+} 
+ 
+if (isMainPage()) {
+    window.setTimeout("enlargeImage()", 100);
+    window.setTimeout("enlargeImage()", 300);
+    window.setTimeout("enlargeImage()", 500);
+    window.setTimeout("enlargeImage()", 1000);
+}
+
+enlargeImage();
 insertAdBefore(getMomlAd());

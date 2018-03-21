@@ -154,5 +154,5 @@ if (isMainPage()) {
     window.setTimeout("enlargeImage()", 1000);
 }
 
-enlargeImage();
+//enlargeImage();
 insertAdBefore(getMomlAd());

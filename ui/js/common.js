@@ -148,11 +148,11 @@ function enlargeImage()
 } 
  
 if (isMainPage()) {
-    window.setTimeout("enlargeImage()", 100);
-    window.setTimeout("enlargeImage()", 300);
-    window.setTimeout("enlargeImage()", 500);
-    window.setTimeout("enlargeImage()", 1000);
+//    window.setTimeout("enlargeImage()", 100);
+//    window.setTimeout("enlargeImage()", 300);
+//    window.setTimeout("enlargeImage()", 500);
+//    window.setTimeout("enlargeImage()", 1000);
 }
 
 //enlargeImage();
-insertAdBefore(getMomlAd());
+//insertAdBefore(getMomlAd());

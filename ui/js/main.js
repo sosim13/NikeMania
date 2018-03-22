@@ -151,20 +151,20 @@ css(".items-wrap h2", "border", "none");
 
 
 // 글꼴 추가
-addMomlFont("/res/UnGraphicBold.ttf"); 
-addMomlFont("/res/QumpellkaNo12.otf"); 
+//addMomlFont("/res/UnGraphicBold.ttf"); 
+//addMomlFont("/res/QumpellkaNo12.otf"); 
 
-css("body", "font-family", "UnGraphicBold");
-css("dd.price", "font-family", "QumpellkaNo12");
+//css("body", "font-family", "UnGraphicBold");
+//css("dd.price", "font-family", "QumpellkaNo12");
 
 // 상품명 문자열 정렬 변경
-adjustTextAlign();
+//adjustTextAlign();
 
    
 // 이미지 크기 변경
 //enlargeImage();
-window.setTimeout(enlargeImage, 500); // 가끔 이미지가 나중에 보여지면서 안커지는 경우가 있어서 적당한 시간 뒤에 재실행하도록 함.
-window.setTimeout(enlargeImage, 1000); // 가끔 이미지가 나중에 보여지면서 안커지는 경우가 있어서 적당한 시간 뒤에 재실행하도록 함.
+//window.setTimeout(enlargeImage, 500); // 가끔 이미지가 나중에 보여지면서 안커지는 경우가 있어서 적당한 시간 뒤에 재실행하도록 함.
+//window.setTimeout(enlargeImage, 1000); // 가끔 이미지가 나중에 보여지면서 안커지는 경우가 있어서 적당한 시간 뒤에 재실행하도록 함.
 
 
 if(document.getElementById("con_says").click()){

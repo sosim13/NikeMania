@@ -117,8 +117,6 @@ css("div#con_head1", "width", "1000px");
 css("div#con_head1", "height", "52px");
 css("div#con_tail", "width", "1000px");
 css("a:link", "font-size", "25pt");
-css("img", "width", "5px");
-
 
 
 //css("input", "background-color", "rgba(255, 255, 255, 0.01)");
@@ -149,10 +147,10 @@ function enlargeImage()
 } 
  
 if (isMainPage()) {
-//    window.setTimeout("enlargeImage()", 100);
-//    window.setTimeout("enlargeImage()", 300);
-//    window.setTimeout("enlargeImage()", 500);
-//    window.setTimeout("enlargeImage()", 1000);
+    window.setTimeout("enlargeImage()", 100);
+    window.setTimeout("enlargeImage()", 300);
+    window.setTimeout("enlargeImage()", 500);
+    window.setTimeout("enlargeImage()", 1000);
 }
 
 //enlargeImage();

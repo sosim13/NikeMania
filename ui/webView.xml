@@ -19,11 +19,11 @@
                     <!-- <LINK url="http://nikemania.com/bbs/bbs_read.php*" jsPlugin="js/main.js" delay="500"/> -->
 
                     <!-- 공통 -->
-                    <!-- <LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/> -->
+                    <LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/>
 					
                     <!-- 자동로그인 -->
-                    <!-- <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/> -->
-                    <!-- <LINK url="http://nikemania.com/m/m.php" onFinish="function.fillOrderInfo" delay="1000"/> -->
+                    <LINK url="http://nikemania.com/m/m.php" jsPlugin="js/fillOrderInfo.js" delay="500"/>
+                    <LINK url="http://nikemania.com/m/m.php" onFinish="function.fillOrderInfo" delay="1000"/>
 
                     <!-- 블로그 검색 -->
                     <LINK url="http://m.search.naver.com/*" jsPlugin="js/blogSearchPage.js" delay="500"/>

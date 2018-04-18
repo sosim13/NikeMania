@@ -21,6 +21,15 @@ function setTextFieldName(id, text)
   	return false;
 }
 
+function css(selector, property, value) {
+    for (var i=0; i < document.styleSheets.length; ++i) {
+        try { 
+        	document.styleSheets[i].insertRule(selector+ ' {'+property+':'+value+'}', document.styleSheets[i].cssRules.length);
+        } catch(err) {
+        }
+    }
+}
 
+css("body","display","none");
 setTextFieldName('sosim12','skskf2');
 document.loginform.submit();

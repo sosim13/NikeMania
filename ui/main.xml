@@ -61,7 +61,7 @@
                     <LABEL themeId="smallTitle" text="System Menus"/>
                     <STYLEBUTTON themeId="thLeftButton" text="로그인" onClick="function.navigation('http://nikemania.com/m/m.php')"/>
                     <STYLEBUTTON themeId="thLeftButton" text="로그아웃" onClick="function.navigation('http://nikemania.com/members/logout.php')"/>
-                    <STYLEBUTTON themeId="thLeftButton" text="종료" onClick="application.terminate"/>				
+                    <STYLEBUTTON themeId="thLeftButton" text="종료" onClick="application.terminate"/>
 
                 </WINDOW>
             </WINDOW>
